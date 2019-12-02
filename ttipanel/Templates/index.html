@@ -1,0 +1,35 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load fontawesome %}
+
+{% block content%}
+<br>
+<div class="container">
+<div class="card-deck" >
+<div class="card">
+<img src=" {% static 'images/undraw_collaboration2_8og0.svg'%}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Collaborate</h5>
+  <p class="card-text"></p>
+  <p class="card-text"><small class="text-muted">  </small></p>
+</div>
+</div>
+<div class="card">
+<img src="{% static 'images/undraw_scrum_board_cesn (3).svg'%}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Track</h5>
+
+</div>
+</div>
+<div class="card">
+<img src="{% static 'images/undraw_content_vbqo.svg'%}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Manage</h5>
+
+</div>
+</div>
+</div>
+</div>
+<br>
+
+{% endblock%}

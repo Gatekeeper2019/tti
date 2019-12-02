@@ -1,0 +1,126 @@
+{% extends 'base.html'%}
+{% load static %}
+{% load fontawesome %}
+{% load fontawesome_5 %}
+
+<h1>This is Dash </h1>
+
+
+{% block content %}
+
+<br>
+<title> {% block title %} Dashboard {% endblock %} </title>
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-sm">
+    <img src="{% static 'images/undraw_business_deal_cpi9.svg'%}" class="card-img-top" alt="...">
+    </div>
+    <div class="col-lg">
+      <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <a href="{%url 'field_office' %}"> <div class="brand-card-header bg-stack-overflow" >
+              <p>{% fa5_icon 'book-open' 'fas' color='#fff'%}</p>
+            </div></a>
+
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">Field Office</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--/.col-->
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <div class="brand-card-header bg-tumblr">
+              <p>{% fa5_icon 'dollar-sign' 'fas'  color='#fff' %}</p>
+            </div>
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">Finance & Admin</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <div class="brand-card-header bg-twitter">
+              <p>{% fa5_icon 'photo-video' 'fas' color='#fff' %}</p>
+            </div>
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">Media</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <div class="brand-card-header bg-vimeo">
+              <p>{% fa5_icon 'hands-helping' 'fas'  color='#fff' %}</p>
+            </div>
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">Partnership</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <div class="brand-card-header bg-vk">
+              <p>{% fa5_icon 'user-shield' 'fas'  color='#fff' %}</p>
+            </div>
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">DRM</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div><!--/.col-->
+        <div class="col-sm-6 col-md-4">
+          <div class="brand-card">
+            <div class="brand-card-header bg-xing">
+              <p>{% fa5_icon 'pagelines' 'fas'  color='#fff' %}</p>
+            </div>
+            <div class="brand-card-body">
+              <div>
+                <div class="text-uppercase text-muted small">Special Projects</div>
+                <div class="text-uppercase text-muted small"></div>
+              </div>
+
+            </div>
+          </div>
+        </div><!--/.col-->
+
+
+      </div><!--/.row-->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<br>
+
+
+
+
+{% endblock %}

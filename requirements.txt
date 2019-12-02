@@ -3,7 +3,6 @@ diff-match-patch==20181111
 Django==2.2.7
 django-countries==5.5
 django-crispy-forms==1.8.1
-django-fontawesome==1.0
 django-fontawesome-5==1.0.16
 django-import-export==1.2.0
 django-phone-field==1.8.0

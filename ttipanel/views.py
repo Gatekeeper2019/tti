@@ -5,7 +5,7 @@ from django.contrib import messages
 from.models import Paulapplication
 
 # Create your views here.
-def home(request):
+def index(request):
     return render (request, "index.html",{})
 
 @login_required(login_url='/login/')
@@ -35,7 +35,7 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     messages.success(request, ('You have been logged out !'))
-    return redirect ('home')
+    return redirect ('index')
 
 @login_required(login_url='/login/')
 def field_office(request):
